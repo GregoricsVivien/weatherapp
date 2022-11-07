@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous" />
+    <title>Weather App</title>
+    <style>
+        body{
+            background-color:rgb(243, 251, 254);
+            text-align: center;
+            
+        }
+        h1, h2, h3{
+            color: black;
+            text-align: center;
+            font-size: bold;
+            margin-bottom: 15px;
+        }
+        form {
+            display: block;
+            margin: 0 auto;
+            padding: 8px 20px ;
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-color: rgb(243, 251, 254);
+        }
+        .container {
+            text-align: center;
+
+        }
+        .container ul {
+            display: inline-block;
+            text-align: left;
+        }
+        .conrad {
+           border: 1px solid black;
+           border-radius: 35px;  
+           width: 60%;
+           align-items: center;
+           display: inline block;
+           text-align: center;
+         }
+         .concen {
+          text-align: center;
+          position: relative;
+          left: 30.5%;
+          width: 65%;
+         }
+        ul {
+            list-style: circle;
+            display: inline-block;
+            text-align: left;
+        }
+        img {
+            width: 90px;
+            height: 90px;
+        }
+        .today2 {
+          text-align: center;
+        }
+        .today {
+            border: 1px solid black;
+            border-radius: 40px;
+            margin-top: 90px;
+            margin-bottom: 90px;
+            text-align: center;
+            align-items: center;
+            display: inline-block;
+            width: 40%;
+
+          }
+          .col-6 {
+            position: relative;
+            right: 15px;
+          }
+          li {
+            margin-top: 10px;
+            margin-bottom: 0;
+          }
+          p {
+            padding-top: 150px;
+            position: relative;
+            left: 15px;
+          }
+          .stormy {
+            position: relative;
+            bottom: 30px;
+            right: 50px;
+          }
+        .col {
+          border: 1px solid black;
+          border-radius: 25px;
+          margin: 14px;
+         padding-top: 15px;
+         padding-bottom: 15px;
+        }
+        
+          
+    </style>
+  </head>
+  <body>
+    <h1>Budapest</h1>
+    <h2>18°C</h2> 
+    <h3> 16:00</h3>
+
+    <form id="search-form">
+      <input 
+         type="text"
+         placeholder="search for a city"
+         autocomplete="off"
+         autofocus="on"
+         id="search-text-input"
+         />
+    </form>
+
+
+    <div class="concen">
+   <div class="conrad">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <ul>
+            <li>sunrise :</li>
+            <li>sunset :</li>
+            <li>wind :</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>chance of rain :</li>
+            <li>UV level :</li>
+            <li>humidity :</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="today2">
+    <div class="today">
+      <img class="stormy" src="https://i.postimg.cc/mr9472zh/1.jpg" alt="storm" />
+      <ul>
+        <li>highest temperature today :</li>
+        <li>lowest temperature today :</li>
+        <li>feels like :</li>
+      </ul>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                  Monday
+                  </br>
+                  <img src="https://i.postimg.cc/FRFPNT4m/22.jpg" alt="fog" />
+                  </br>
+                   5°C / 15°C
+            </div>
+            <div class="col">
+                   Tuesday
+      </br>
+
+      <img src="https://i.postimg.cc/gJRv9Rwd/33.jpg" alt="sun" />
+      </br>
+      8°C / 18°C
+            </div>
+            <div class="col">
+              Wednesday
+      </br>
+
+      <img src="https://i.postimg.cc/HsTbKrTD/44.jpg" alt="snow" />
+      </br>
+      -2°C / 6°C
+            </div>
+            <div class="col">
+                Thursday
+      </br>
+
+      <img src="https://i.postimg.cc/RhpCXpM0/55.jpg" alt="suncloud" />
+      </br>
+      2°C / 11°C
+            </div>
+            <div class="col">
+              Friday
+      </br>
+
+      <img src="https://i.postimg.cc/Bbb4L5xf/66.jpg" alt="cloud" />
+      </br>
+      3°C / 14°C
+            </div>
+        </div>
+    </div>
+
+    
+    <p>
+        coded by Vivien Gregorics
+    </p>
+    	<script src="proj.js">
+        </script>
+
+  </body>
+</html>
